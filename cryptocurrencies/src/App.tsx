@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import { type } from 'os';
-
-export type Crypto = {
-	ath: number;
-	atl: number;
-	current_price: number;
-	id: string;
-	image: string;
-	name: string;
-	symbol: string;
-	high_24h: number;
-	low_24h: number;
-};
+import CryptoSummary from './components/CryptoSummary';
+import { Crypto } from './Types';
 
 function App() {
-	const [cryptos, setCryptos] = useState<Crypto[] | null>();
+	const [cryptos, setCryptos] = useState<Crypto[] | null>(null);
 
 	useEffect(() => {
 		const url =
@@ -31,22 +20,7 @@ function App() {
 			<h2>Here are the Cryptos</h2>
 			{cryptos
 				? cryptos.map((crypto) => {
-						return (
-							<p>
-								<img
-									src={crypto.image}
-									width='15'
-								/>
-								{' ' +
-									crypto.name +
-									' ' +
-									crypto.current_price.toLocaleString('en-US', {
-										style: 'currency',
-										currency: 'INR',
-										minimumFractionDigits: 2,
-									})}
-							</p>
-						);
+						return <CryptoSummary crypto={crypto} />;
 				  })
 				: null}
 		</div>
