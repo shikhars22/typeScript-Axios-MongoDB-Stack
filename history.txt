@@ -1,0 +1,753 @@
+    1  sudo apt update
+    2  sudoedit /etc/gdm3/custom.conf
+    3  cat /etc/gdm3/custom.conf 
+    4  sudo systemctl restart gdm3
+    5  sudo apt install nodejs
+    6  git clone https://github.com/shikhars22/mernLogin.git
+    7  sudo apt install git
+    8  git clone https://github.com/shikhars22/mernLogin.git
+    9  ls
+   10  cd mernLogin/
+   11  ls
+   12  npx create-react-app client
+   13  sudo apt install npm
+   14  sudo apt install npx
+   15  npx create-react-app client
+   16  sudo npm install -g yarn
+   17  npx create-react-app client
+   18  node -v
+   19  sudo apt-get remove nodejs
+   20  node -v
+   21  sudo apt update
+   22  curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+   23  cd ~
+   24  curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+   25  sudo apt install curl
+   26  curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+   27  nano nodesource_setup.sh
+   28  sudo bash nodesource_setup.sh
+   29  sudo apt install nodejs
+   30  node -v
+   31  sudo dpkg --configure -a
+   32  sudo apt install nodejs
+   33  sudo apt-get install -f
+   34  npm -v
+   35  history
+   36  npm -v
+   37  npx -v
+   38  yarn -v
+   39  sudo apt autoremove
+   40  npm -v
+   41  sudo bash nodesource_setup.sh
+   42  sudo apt install nodejs
+   43  node -v
+   44  npx create-react-app client
+   45  ls
+   46  cd client/
+   47  ls
+   48  cd ..
+   49  ls
+   50  rm client/
+   51  rmdir client/
+   52  rmdir -r client/
+   53  rmdir -rF client/
+   54  cd github/
+   55  ls
+   56  cd mernLogin/
+   57  ls
+   58  npx create-react-app client
+   59  history
+   60  sudo apt update
+   61  sudo apt install wget
+   62  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   63  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   64  teams
+   65  git status
+   66  git add *
+   67  git status
+   68  cd ..
+   69  ls
+   70  git status
+   71  git add *
+   72  git status
+   73  git commit -m "first commit"
+   74  git push origin master
+   75  git checkout -b devSkg
+   76  git status
+   77  ls
+   78  rm google-chrome-stable_current_amd64.deb 
+   79  ls
+   80  git status
+   81  git add *
+   82  git commit -m "started add register api and started getting error in post"
+   83  git push origin devSkg 
+   84  yarn start
+   85  mkdir server
+   86  touch server/index.js
+   87  ls
+   88  cd client/
+   89  yarn start
+   90  history
+   91  cd ..
+   92  cd server/
+   93  yarn init
+   94  node -v
+   95  yarn add express
+   96  yarn add nodemon --save-dev
+   97  yarn dev
+   98  yarn add cors
+   99  yarn dev
+  100  node build/regenerateAllCertificates.js
+  101  yarn dev
+  102  cors -v
+  103  yarn add cors
+  104  yarn dev
+  105  ls
+  106  cd github/
+  107  ls
+  108  git clone https://github.com/shikhars22/djangoSampleSystemApp
+  109  ls
+  110  cd djangoSampleSystemApp/
+  111  ls
+  112  source virt/Scripts/activate
+  113  pip freeze
+  114  sudo apt install python3-pip
+  115  python
+  116  python3
+  117  pip freeze
+  118  deactivate
+  119  python
+  120  python3
+  121  ls
+  122  git rm -r virt/
+  123  ls
+  124  touch .gitignore
+  125  vim .gitignore 
+  126  sudo apt install vim
+  127  vim .gitignore 
+  128  ls
+  129  ls -lah
+  130  git status
+  131  git add *
+  132  git status
+  133  git add .gitignore 
+  134  git status
+  135  git push origin master
+  136  git config --global user.name shikhars22
+  137  git config --global user.email shikhars22@gmail.com
+  138  git config -l
+  139  cd ..
+  140  ls
+  141  ls -lah
+  142  cd djangoSampleSystemApp/
+  143  ls -lah
+  144  git config --global credential.helper cache
+  145  git stauts
+  146  git status
+  147  git commit -m "added gitignore"
+  148  git push origin master
+  149  git remote set-url origin https://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@github.com/shikhars22/djangoSampleSystemApp.git
+  150  git push origin master
+  151  git config --local --unset credential.helper
+  152  git config --global --unset credential.helper
+  153  git pull
+  154  $ git push -u origin main
+  155  git push -u origin main
+  156  cd ..
+  157  git clone https://github.com/shikhars22/djangoReactStack
+  158  ls
+  159  rmdir djangoSampleSystemApp/
+  160  rmdir -r djangoSampleSystemApp/
+  161  rm -r djangoSampleSystemApp/
+  162  rm -d djangoSampleSystemApp/
+  163  rm -r djangoSampleSystemApp/
+  164  y
+  165  ls
+  166  cd djangoReactStack/
+  167  ls
+  168  pip freeze
+  169  python
+  170  python3 --version
+  171  py --version
+  172  clear
+  173  ls -lah
+  174  vim .gitignore 
+  175  git status
+  176  git add .gitignore 
+  177  git commit -m "added gitignore file"
+  178  git push origin master
+  179  vim .gitignore 
+  180  git status
+  181  git add .gitignore 
+  182  git commit -m "added xlsx in gitignore file"
+  183  git push origin master
+  184  git config --global credential.helper store
+  185  git push origin master
+  186  git config --global credential.helper store
+  187  git push origin master
+  188  git status
+  189  vim .gitignore 
+  190  git add .gitignore 
+  191  git commit -m "added csv  in gitignore file"
+  192  git push origin master
+  193  ls
+  194  npx create-react-app hello
+  195  code hello
+  196  git status
+  197  ls
+  198  git branch
+  199  git checkout -b dev
+  200  echo $PS1
+  201  vi ~/.bashrc
+  202  source ~/.bashrc
+  203  vi ~/.bashrc
+  204  source ~/.bashrc
+  205  vi ~/.bashrc
+  206  source ~/.bashrc
+  207  npm run build
+  208  serve -s build
+  209  sudo snap install serve
+  210  serve -s build
+  211  clear
+  212  serve -s build
+  213  serve -sd build
+  214  serve -d build
+  215  vi ~/.bashrc
+  216  source ~/.bashrc
+  217  git checkou master
+  218  git checkout master
+  219  git checkout dev
+  220  git status
+  221  git add hello
+  222  git status
+  223  ls
+  224  vim README.md 
+  225  git status
+  226  git add README.md 
+  227  git status
+  228  git commit -m "Lesson 1 done"
+  229  git push orgin dev
+  230  git push origin dev
+  231  git checkout shiny basoon
+  232  git pull
+  233  git branch --set-upstream-to=origin/dev dev
+  234  git pull
+  235  git branch
+  236  git checkout master 
+  237  git pull
+  238  git delete dev
+  239  git branch delete dev
+  240  git branch
+  241  git branch --help
+  242  git branch -d dev
+  243  git branch
+  244  git branch -d delete
+  245  git branch
+  246  git status
+  247  ls
+  248  vi README.md 
+  249  git add *
+  250  git commit -m " added youtube playlist in readme file"
+  251  git push origin master
+  252  ls
+  253  git checkout devskg
+  254  git checkout -b devskg
+  255  npm run build
+  256  npm install -g serve
+  257  sudo npm install -g serve
+  258  sudo npm fund
+  259  npm install
+  260  sudo npm fund
+  261  sudo npm install
+  262  sudo npm fund
+  263  sudo npm install
+  264  sudo npm fund
+  265  stats.children: true
+  266  stats.children: true resp
+  267  sudo npm cache clean -f
+  268  sudo npm install -g n
+  269  sudo n stable
+  270  sudo n latest
+  271  node -v
+  272  sudo npm install
+  273  sudo npm fund
+  274  clear
+  275  git status
+  276  git add *
+  277  git status
+  278  git commit -m "Lesson 2 done"
+  279  git status
+  280  git add *
+  281  git commit -m "Lesson 3 done"
+  282  git status
+  283  git add *
+  284  git commit -m "Lesson 4 done"
+  285  git status
+  286  git add *
+  287  git config advice.addIgnoredFile false
+  288  git status
+  289  git commit -m "Lesson 5 done"
+  290  git push origin devskg 
+  291  npm install -D tailwindcss postcss autoprefixer
+  292  sudo npm install -D tailwindcss postcss autoprefixer
+  293  npx tailwindcss init -p
+  294  npm run build
+  295  git status
+  296  git add *
+  297  git add .
+  298  git status
+  299  git commit -m "Lesson 6 done"
+  300  git status
+  301  git add .
+  302  git status
+  303  git commit -m "Lesson 7 done"
+  304  git push origin devskg 
+  305  sudo npm install uuid
+  306  git add .
+  307  git commit -m "Lesson 8 done"
+  308  git push origin devskg 
+  309  sudo npm install react-bootstrap bootstrap
+  310  git add .
+  311  git status
+  312  git commit -m "Lesson 9 done"
+  313  git status
+  314  git add .
+  315  git commit -m "Lesson 10 done"
+  316  git status
+  317  git push origin devskg
+  318  git status
+  319  git add .
+  320  git status
+  321  git commit -m "Lesson 11 done"
+  322  git add .
+  323  git commit -m "Lesson 12 done"
+  324  npm run build
+  325  git status
+  326  git head
+  327  git log
+  328  clear
+  329  git push origin devskg 
+  330  git status
+  331  git add .
+  332  git commit -m "Lesson 13 done"
+  333  git status
+  334  serve -s build
+  335  serve -d build
+  336  npm start
+  337  npm run build
+  338  clear
+  339  history
+  340  clear
+  341  git status
+  342  git log
+  343  git push origin devskg 
+  344  clear
+  345  git add .
+  346  git status
+  347  git commit -m "Lesson 14 done"
+  348  sudo npm install @headlessui/react
+  349  sudo npm install @heroicons/react/24/outline
+  350  sudo npm install @heroicons/react/
+  351  sudo npm install @heroicons/react
+  352  git status
+  353  git add .
+  354  git commit -m "Lesson 15 done"
+  355  npm run build
+  356  git add .
+  357  git commit -m "Lesson 16 done"
+  358  git push origin devskg 
+  359  ls
+  360  sudo npm install react-router-dom
+  361  git add .
+  362  git status
+  363  git commit -m "Lesson 17 done"
+  364  git add .
+  365  git commit -m "Lesson 18 done"
+  366  serve -d build
+  367  sudo install -g serve
+  368  sudo npm install -g serve
+  369  sudo npm fund
+  370  serve -d build
+  371  serve -s build
+  372  npm run build
+  373  npm start
+  374  200*82
+  375  ls
+  376  git add .
+  377  git status
+  378  git commit -m "Lesson 19 done"
+  379  git add .
+  380  git commit -m "Lesson 20 done"
+  381  git push origin devskg 
+  382  sudo npm run build
+  383  serve -s build
+  384  npm
+  385  npm start
+  386  serve -s build
+  387  npm run build
+  388  git add .
+  389  git commit -m "Lesson 21 done"
+  390  git add .
+  391  git commit -m "Lesson 22 done"
+  392  git push origin devskg 
+  393  git add .
+  394  git commit -m "Lesson 23 done"
+  395  git add .
+  396  git commit -m "Lesson 24 done"
+  397  git add .
+  398  git status
+  399  git commit -m "Lesson 25 done"
+  400  git status
+  401  git add .
+  402  git commit -m "Lesson 26 done"
+  403  git push origin devskg 
+  404  git push origin devskg 
+  405  npm start
+  406  git add .
+  407  git commit -m "Lesson 27 done"
+  408  python
+  409  python3
+  410  cd ..
+  411  cd djangoReactStack/
+  412  ls
+  413  ls react
+  414  cd ..
+  415  ls react
+  416  cd djangoReactStack/
+  417  ls
+  418  mkdir backend
+  419  cd backend/
+  420  ls
+  421  python3 -m venv .venv
+  422  apt install python3.10-venv
+  423  sudo python3 -m venv .venv
+  424  sudo apt install python3.10-venv
+  425  sudo python3 -m venv .venv
+  426  ls -lah
+  427  . .venv/bin/activate
+  428  pip freeze
+  429  pip install django
+  430  django-admin startproject customers .
+  431  ls
+  432  python3 manage.py runserver
+  433  git status
+  434  npm run build
+  435  serve -s build
+  436  npm run build
+  437  serve -s build
+  438  npm run build
+  439  npm start
+  440  /bin/python3 -m pip install -U autopep8
+  441  cd ..
+  442  git status
+  443  git add .
+  444  git status
+  445  git commit -m "Lesson 28 done"
+  446  git push origin devskg 
+  447  git status
+  448  git commit -m "Lesson 29 done"
+  449  git add .
+  450  git status
+  451  git commit -m "Lesson 29 done"
+  452  git push origin devskg 
+  453  cd backend/
+  454  cd ..
+  455  git rm -r --cached .vscode/
+  456  git status
+  457  git add .
+  458  git commit -m "removed the .vscode folder for vscode setings from git tracking"
+  459  git push origin devskg 
+  460  npm run build
+  461  cd hello/
+  462  npm run build
+  463  git status
+  464  git add .
+  465  git commit -m "Lesson 30 done"
+  466  git push origin devskg 
+  467  git status
+  468  git add .
+  469  git status
+  470  git add .
+  471  cd ..
+  472  cd .
+  473  git add .
+  474  git status
+  475  git commit -m "Lesson 31 done"
+  476  git push origin devskg 
+  477  git commit -m "Lesson 32 done"
+  478  git add .
+  479  git commit -m "Lesson 32 done"
+  480  git push origin devskg 
+  481  git add .
+  482  git status
+  483  git commit -m "Lesson 33 done"
+  484  git push origin devskg 
+  485  git add .
+  486  git commit -m "Lesson 34 done"
+  487  git push origin devskg 
+  488  sudo npm run build
+  489  cd hello/
+  490  sudo npm run build
+  491  cd ..
+  492  git add .
+  493  git commit -m "Lesson 36 done"
+  494  git push origin devskg 
+  495  cd ..
+  496  ls
+  497  cd backend/
+  498  ls
+  499  ls -a
+  500  . .venv/bin/activate
+  501  python3 manage.py runserver
+  502  python --version
+  503  pip freeze
+  504  pip install django-rest-framework
+  505  pip freeze > requirements.txt
+  506  pip install -r  requirements.txt
+  507  python3 manage.py runserver
+  508  python manage.py migrate
+  509  python manage.py runserver
+  510  clear
+  511  python manage.py makemigrations customers/
+  512  python manage.py makemigrations customers
+  513  python manage.py migrate
+  514  python manage.py runserver
+  515  python manage.py createsuperuser
+  516  python manage.py runserver
+  517  clear
+  518  pip install django-cors-headers
+  519  pip freeze > requirements.txt
+  520  python manage.py runserver
+  521  npm run build
+  522  serve -s build
+  523  npm run build
+  524  cd hello/
+  525  npm run build
+  526  npm start
+  527  npm run build
+  528  cd ..
+  529  cd hello/
+  530  npm run build
+  531  cdm..
+  532  cd ..
+  533  git status
+  534  git add .
+  535  git commit -m "Lesson 37 done"
+  536  git push origin devskg 
+  537  git add .
+  538  git commit -m "Lesson 38 done"
+  539  git push origin devskg 
+  540  git add .
+  541  git commit -m "Lesson 39 done"
+  542  git push origin devskg 
+  543  npm run build
+  544  cd ..
+  545  ls
+  546  cd backend/
+  547  ls
+  548  cd customers/
+  549  ls
+  550  ls -lh
+  551  cd ..
+  552  ls -lh
+  553  ls -a
+  554  cd .venv/
+  555  ls
+  556  ls -a
+  557  cd bin
+  558  ls -a
+  559  activate
+  560  source activate
+  561  pip freeze
+  562  deactivate 
+  563  pip freeze
+  564  source activate
+  565  pip freeze
+  566  cd ..
+  567  ls
+  568  cd hello/
+  569  ls
+  570  cd ..
+  571  cd backend/
+  572  python manage.py runserver
+  573  deactivate
+  574  cd hello/
+  575  npm start
+  576  git status
+  577  git log
+  578  npm run build
+  579  serve -s build
+  580  npm run
+  581  cd ..
+  582  cd hello/
+  583  npm start
+  584  cd backend/
+  585  python manage.py migrate
+  586  source .venv/bin/activate
+  587  python manage.py migrate
+  588  python manage.py runserver
+  589  git add .
+  590  git status
+  591  cd ..
+  592  git add .
+  593  git status
+  594  git commit -m "Lesson 40 done"
+  595  git commit -m "Lesson 41 done"
+  596  git push origin devskg 
+  597  serve -s build
+  598  npm start 
+  599  source .venv/bin/activate
+  600  python manage.py migrate
+  601  python manage.py runserver
+  602  sudo snap install postman
+  603  postman
+  604  cd backend/
+  605  ls
+  606  cd ..
+  607  ls -a
+  608  cd backend/.venv/bin
+  609  ls
+  610  activate
+  611  source activate
+  612  cd ../..
+  613  ls
+  614  python manage.py runserver
+  615  clear
+  616  pip install djangorestframework-simplejwt
+  617  pip freeze
+  618  pip freeze > requirements.txt 
+  619  python manage.py runserver
+  620  pip freeze
+  621  deactivate
+  622  npm run build
+  623  cd ..
+  624  cd hello/
+  625  ls
+  626  npm run build
+  627  serve -s build
+  628  cd ..
+  629  cd hello/
+  630  ls
+  631  npm start
+  632  serve -s build
+  633  npm run build
+  634  history
+  635  cd ..
+  636  history > history.txt
+  637  git status
+  638  git add .
+  639  git status
+  640  git commit -m "Lesson 42 done"
+  641  git add .
+  642  git commit -m "Lesson 43 done"
+  643  git push origin devskg 
+  644  git status
+  645  git add .
+  646  git commit -m "Lesson 45 done"
+  647  git push origin devskg 
+  648  clear
+  649  git --username
+  650  git config
+  651  git push origin devskg
+  652  git commit -m "Lesson 46 done"
+  653  git add .
+  654  git commit -m "Lesson 46 done"
+  655  git status
+  656  git add .
+  657  git commit -m "Lesson 46 done"
+  658  git status
+  659  git add .
+  660  git commit -m "Lesson 47 done"
+  661  git add .
+  662  git commit -m "Lesson 49 done"
+  663  git push origin devskg
+  664  npm run build
+  665  cd hello/
+  666  npm run build
+  667  cd ..
+  668  git add .
+  669  git status
+  670  git commit -m "Lesson 50 done"
+  671  git status
+  672  git add .
+  673  git commit -m "Lesson 51 done"
+  674  git add .
+  675  git commit -m "Lesson 52 done"
+  676  git add .
+  677  git commit -m "Lesson 53 done"
+  678  history
+  679  git add .
+  680  git commit -m "Project 1(Javascript) done. Project 2 will start with Typescript and Axios"
+  681  git push origin devskg 
+  682  clear
+  683  cd ..
+  684  ls
+  685  git clone https://github.com/shikhars22/cryptocurrencies.git
+  686  cd cryptocurrencies/
+  687  git checkout -b devskg
+  688  node --version
+  689  clear
+  690  npx create-react-app cryptocurrencies --template typescript
+  691  cd ..
+  692  rm -r cryptocurrencies/
+  693  y
+  694  ls
+  695  clear
+  696  git clone https://github.com/shikhars22/typeScriptStack.git
+  697  cd typeScriptStack/
+  698  npx create-react-app cryptocurrencies --template typescript
+  699  git pull
+  700  git checkout master
+  701  git pull
+  702  touch rough.txt
+  703  ls
+  704  cd cryptocurrencies/
+  705  ls
+  706  cd ..
+  707  ls
+  708  rm -r cryptocurrencies/
+  709  npx create-react-app cryptocurrencies --template typescript
+  710  cd cryptocurrencies/
+  711  npm start
+  712  npm run build
+  713  git checkout -b devskg
+  714  vi ~/.bashrc
+  715  source ~/.bashrc
+  716  git checkout master
+  717  git checkout -b master
+  718  git status
+  719  cd ..
+  720  git status
+  721  git add .
+  722  git commit -m "Initial commit"
+  723  git push origin master
+  724  git pull
+  725  git commit -m "Added readme "
+  726  git add .
+  727  git commit -m "Added readme "
+  728  git push origin master
+  729  git checkout devskg
+  730  git checkout -b devskg
+  731  npm install axios
+  732  npm uninstall axios
+  733  cd cryptocurrencies/
+  734  npm install axios
+  735  git stash
+  736  cd ..
+  737  rm -r typeScriptStack/
+  738  cd ..
+  739  git add .
+  740  git status
+  741  git commit -m "Start of Lesson 54"
+  742  git push origin master
+  743  cd ..
+  744  rm -r mernLogin/
+  745  y
+  746  clear
+  747  ls
+  748  rm -r typeScriptStack/
+  749  clear
+  750  cd typeScript-Axios-MongoDB-Stack/
+  751  touch LICENSE
+  752  vi LICENSE 
+  753  history > history.txt

@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=qp6e0tucEhw&list=PL_c9BZzLwBRKFRIBWEWYCnV4Lk9HE3
 
 1. Clone this repo in your system using below command:
 
-        git clone https://github.com/shikhars22/typeScriptStack
+        git clone https://github.com/shikhars22/typeScript-Axios-MongoDB-Stack/
 
 2. Install 
    1. Git Bash
