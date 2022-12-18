@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import { type } from 'os';
-
-export type Crypto = {
-	ath: number;
-	atl: number;
-	current_price: number;
-	id: string;
-	image: string;
-	name: string;
-	symbol: string;
-	high_24h: number;
-	low_24h: number;
-};
+import CryptoSummary from './components/CryptoSummary';
+import { Crypto } from './Types';
 
 function App() {
-	const [cryptos, setCryptos] = useState<Crypto[] | null>();
+	const [cryptos, setCryptos] = useState<Crypto[] | null>(null);
+	const [selected, setSelected] = useState<Crypto | null>();
 
 	useEffect(() => {
 		const url =
@@ -27,29 +17,38 @@ function App() {
 		});
 	}, []);
 	return (
-		<div className='App'>
-			<h2>Here are the Cryptos</h2>
-			{cryptos
-				? cryptos.map((crypto) => {
-						return (
-							<p>
-								<img
-									src={crypto.image}
-									width='15'
-								/>
-								{' ' +
-									crypto.name +
-									' ' +
-									crypto.current_price.toLocaleString('en-US', {
-										style: 'currency',
-										currency: 'INR',
-										minimumFractionDigits: 2,
-									})}
-							</p>
-						);
-				  })
-				: null}
-		</div>
+		<>
+			<div className='App'>
+				<h2>Here are the Cryptos</h2>
+				<select
+					onChange={(e) => {
+						console.log(e.target.value);
+						const c = cryptos?.find((x) => x.id === e.target.value);
+						setSelected(c);
+						console.log(c);
+					}}
+					defaultValue='default'>
+					<optgroup label='Default'>
+						<option value={'default'}>Choose an Option</option>
+					</optgroup>
+					<optgroup label='Coins'>
+						{cryptos
+							? cryptos.map((crypto) => {
+									// return <CryptoSummary crypto={crypto} />;
+									return (
+										<option
+											key={crypto.id}
+											value={crypto.id}>
+											{crypto.name}
+										</option>
+									);
+							  })
+							: null}
+					</optgroup>
+				</select>
+			</div>
+			{selected ? <CryptoSummary crypto={selected} /> : null}
+		</>
 	);
 }
 
