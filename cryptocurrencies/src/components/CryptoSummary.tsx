@@ -6,11 +6,6 @@ export type AppProps = {
 export default function CryptoSummary({ crypto }: AppProps): JSX.Element {
 	return (
 		<p>
-			<img
-				src={crypto.image}
-				width='15'
-				alt=''
-			/>
 			{' ' +
 				crypto.name +
 				' ' +
@@ -19,6 +14,13 @@ export default function CryptoSummary({ crypto }: AppProps): JSX.Element {
 					currency: 'INR',
 					minimumFractionDigits: 2,
 				})}
+			<br />
+			<br />
+			<img
+				src={crypto.image}
+				width='50'
+				alt=''
+			/>
 		</p>
 	);
 }
