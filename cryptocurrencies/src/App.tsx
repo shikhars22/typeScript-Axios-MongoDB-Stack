@@ -31,9 +31,9 @@ ChartJS.register(
 
 function App() {
 	const [cryptos, setCryptos] = useState<Crypto[] | null>(null);
-	const [selected, setSelected] = useState<Crypto | null>();
+	const [selected, setSelected] = useState<Crypto[]>([]);
 	const [range, setRange] = useState<number>(30);
-	const [data, setData] = useState<ChartData<'line'>>();
+	/* 	const [data, setData] = useState<ChartData<'line'>>();
 	const [options, setOptions] = useState<ChartOptions<'line'>>({
 		responsive: true,
 		plugins: {
@@ -47,7 +47,7 @@ function App() {
 			},
 		},
 	});
-
+ */
 	useEffect(() => {
 		const url =
 			'https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false';
@@ -56,7 +56,7 @@ function App() {
 			setCryptos(response.data);
 		});
 	}, []);
-
+	/* 
 	useEffect(() => {
 		if (!selected) return;
 		axios
@@ -104,7 +104,7 @@ function App() {
 			.catch((e) => {
 				console.log(e);
 			});
-	}, [selected, range]);
+	}, [selected, range]); */
 
 	return (
 		<>
@@ -113,8 +113,8 @@ function App() {
 				<select
 					onChange={(e) => {
 						// console.log(e.target.value);
-						const c = cryptos?.find((x) => x.id === e.target.value);
-						setSelected(c);
+						const c = cryptos?.find((x) => x.id === e.target.value) as Crypto;
+						setSelected([...selected, c]);
 						// console.log(c);
 					}}
 					defaultValue='default'>
@@ -136,24 +136,27 @@ function App() {
 							: null}
 					</optgroup>
 				</select>
-				<select
+				{/* <select
 					onChange={(e) => {
 						setRange(parseInt(e.target.value));
 					}}>
 					<option value={30}>30 days</option>
 					<option value={7}>7 days</option>
 					<option value={1}>1 day</option>
-				</select>
+				</select> */}
 			</div>
-			{selected ? <CryptoSummary crypto={selected} /> : null}
-			{data ? (
+			{selected.map((s) => {
+				return <CryptoSummary crypto={s} />;
+			})}
+			{/* {selected ? <CryptoSummary crypto={selected} /> : null} */}
+			{/* 		{data ? (
 				<div style={{ width: 600 }}>
 					<Line
 						options={options}
 						data={data}
 					/>
 				</div>
-			) : null}
+			) : null} */}
 		</>
 	);
 }
