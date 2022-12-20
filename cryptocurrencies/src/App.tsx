@@ -15,16 +15,18 @@ import {
 	Title,
 	Tooltip,
 	Legend,
+	ArcElement,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import moment from 'moment';
 
 ChartJS.register(
-	CategoryScale,
-	LinearScale,
-	PointElement,
-	LineElement,
-	Title,
+	ArcElement,
+	// CategoryScale,
+	// LinearScale,
+	// PointElement,
+	// LineElement,
+	// Title,
 	Tooltip,
 	Legend
 );
@@ -33,8 +35,8 @@ function App() {
 	const [cryptos, setCryptos] = useState<Crypto[] | null>(null);
 	const [selected, setSelected] = useState<Crypto[]>([]);
 	const [range, setRange] = useState<number>(30);
-	/* 	const [data, setData] = useState<ChartData<'line'>>();
-	const [options, setOptions] = useState<ChartOptions<'line'>>({
+	const [data, setData] = useState<ChartData<'pie'>>();
+	/*const [options, setOptions] = useState<ChartOptions<'line'>>({
 		responsive: true,
 		plugins: {
 			legend: {
@@ -107,7 +109,46 @@ function App() {
 	}, [selected, range]); */
 
 	useEffect(() => {
+		// const randomBetween = (min: number, max: number) =>
+		// 	min + Math.floor(Math.random() * (max - min + 1));
+		// const r = randomBetween(0, 255);
+		// const g = randomBetween(0, 255);
+		// const b = randomBetween(0, 255);
+		// const bgRgb = `rgba(${r},${g},${b},0.2)`;
+		// const brRgb = `rgba(${r},${g},${b},1)`;
+
 		console.log('selcted : ', selected);
+		if (selected.length === 0) return;
+		setData({
+			labels: selected.map((s) => {
+				return s.name;
+			}),
+			datasets: [
+				{
+					label: ' Owned Total Amount',
+					data: selected.map((s) => {
+						return s.owned * s.current_price;
+					}),
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)',
+					],
+					borderColor: [
+						'rgba(255, 99, 132, 1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)',
+					],
+					borderWidth: 6,
+				},
+			],
+		});
 	}, [selected]);
 
 	function updateOwned(crypto: Crypto, amount: number): void {
@@ -176,14 +217,6 @@ function App() {
 				);
 			})}
 			{/* {selected ? <CryptoSummary crypto={selected} /> : null} */}
-			{/* 		{data ? (
-				<div style={{ width: 600 }}>
-					<Line
-						options={options}
-						data={data}
-					/>
-				</div>
-			) : null} */}
 			<h3>Portfolio amounts owned for different coins</h3>
 			{selected
 				? selected.map((s) => {
@@ -219,6 +252,11 @@ function App() {
 							minimumFractionDigits: 2,
 						})
 				: null}
+			{data ? (
+				<div style={{ width: 600 }}>
+					<Pie data={data} />
+				</div>
+			) : null}
 		</>
 	);
 }
