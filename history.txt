@@ -751,3 +751,125 @@
   751  touch LICENSE
   752  vi LICENSE 
   753  history > history.txt
+  754  cd ..
+  755  rm rough.txt 
+  756  cd typeScript-Axios-MongoDB-Stack/
+  757  ls
+  758  cd cryptocurrencies/
+  759  npm install axios
+  760  cd ..
+  761  ls
+  762  git branch
+  763  git commit -m "Start of Lesson 54 after installing axios"
+  764  git add .
+  765  git commit -m "Start of Lesson 54 after installing axios"
+  766  git push orgin master
+  767  git push origin master
+  768  git checkout -b devskg
+  769  cd ..
+  770  cd typeScript-Axios-MongoDB-Stack/
+  771  ls
+  772  git status
+  773  git add .
+  774  git status
+  775  git commit -m "Lesson 54 done"
+  776  git push origin devskg 
+  777  git add .
+  778  git status
+  779  git add .
+  780  git status
+  781  git commit -m "Lesson 55 done"
+  782  git push origin devskg 
+  783  y
+  784  clear
+  785  mkdir typeScript-Axios-MongoDB-Stack
+  786  cd typeScript-Axios-MongoDB-Stack/
+  787  npx create-react-app cryptocurrencies --template typescript
+  788  git init
+  789  git config --global init.defaultBranch master
+  790  git add .
+  791  cd ..
+  792  ls
+  793  cd typeScript-Axios-MongoDB-Stack/
+  794  ls
+  795  git add .
+  796  git status
+  797  cd cryptocurrencies/
+  798  gi add .
+  799  git add .
+  800  ls
+  801  git status
+  802  git commit -m "Initial commit"
+  803  git push origin master
+  804  cd ..
+  805  git clone https://github.com/shikhars22/typeScriptStack
+  806  cd typeScript-Axios-MongoDB-Stack/
+  807  rm -rF cryptocurrencies/
+  808  rm -r cryptocurrencies/
+  809  y
+  810  git init 
+  811  git status
+  812  git add .
+  813  git status
+  814  git master
+  815  git branch
+  816  git remote add origin https://github.com/shikhars22/typeScript-Axios-MongoDB-Stack.git
+  817  git branch -M master
+  818  git push -u origin master
+  819  git remote add origin https://github.com/shikhars22/typeScript-Axios-MongoDB-Stack.git
+  820  git branch -M master
+  821  git push -u origin master
+  822  history
+  823  git checkout -b master
+  824  git add .
+  825  git status
+  826  source ~/.bashrc
+  827  git commit -m "initial commit"
+  828  git push origin master
+  829  git pull
+  830  git pull master
+  831  git pull origin master
+  832  ls
+  833  npx create-react-app cryptocurrencies --template typescript
+  834  cd cryptocurrencies/
+  835  npm start
+  836  code typeScript-Axios-MongoDB-Stack/
+  837  xit
+  838  exit
+  839  cd ..4
+  840  cd ..
+  841  cd typeScript-Axios-MongoDB-Stack/
+  842  ls
+  843  clear
+  844  git status
+  845  git add .
+  846  git status
+  847  git commit -m "Lesson 57 done"
+  848  git push origin devskg 
+  849  git commit -m "Lesson 58 done"
+  850  git add .
+  851  git commit -m "Lesson 58 done"
+  852  git status
+  853  git commit -m "Lesson 59 done"
+  854  git add .
+  855  git commit -m "Lesson 59 done"
+  856  git commit -m "Lesson 60 mid"
+  857  git add .
+  858  git commit -m "Lesson 60 mid"
+  859  git push origin devskg 
+  860  cd ..
+  861  git add .
+  862  git status
+  863  git commit -m "Lesson 56 done"
+  864  git push origin devskg 
+  865  npm install chart.js react-chartjs-2
+  866  npm install react@latest react-dom@latest
+  867  npm install --save-dev @types/react@latest @types/react-dom@latest
+  868  cd cryptocurrencies/
+  869  npm install chart.js react-chartjs-2
+  870  npm install moment
+  871  npm run build
+  872  serve -s build
+  873  cd cryptocurrencies/
+  874  npm start
+  875  history > history.txt 

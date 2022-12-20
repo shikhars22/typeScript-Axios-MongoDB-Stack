@@ -16,12 +16,12 @@ export default function CryptoSummary({
 	});
 
 	return (
-		<div>
+		<div key={crypto.id}>
 			<span>
 				{' ' +
 					crypto.name +
 					' ' +
-					crypto.current_price.toLocaleString('en-US', {
+					crypto.current_price.toLocaleString('en-IN', {
 						style: 'currency',
 						currency: 'INR',
 						minimumFractionDigits: 2,
@@ -44,12 +44,14 @@ export default function CryptoSummary({
 					updateOwned(crypto, parseFloat(e.target.value));
 				}}></input>
 			<p>
-				{(crypto.current_price * amount).toLocaleString('en-US', {
-					style: 'currency',
-					currency: 'INR',
-					minimumFractionDigits: 2,
-					maximumFractionDigits: 2,
-				})}
+				{isNaN(amount)
+					? '₹ 0.00'
+					: (crypto.current_price * amount).toLocaleString('en-IN', {
+							style: 'currency',
+							currency: 'INR',
+							minimumFractionDigits: 2,
+							maximumFractionDigits: 2,
+					  })}
 			</p>
 		</div>
 	);

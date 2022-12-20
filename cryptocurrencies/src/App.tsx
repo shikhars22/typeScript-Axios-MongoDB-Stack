@@ -105,14 +105,26 @@ function App() {
 				console.log(e);
 			});
 	}, [selected, range]); */
+
+	useEffect(() => {
+		console.log('selcted : ', selected);
+	}, [selected]);
+
 	function updateOwned(crypto: Crypto, amount: number): void {
 		console.log('updateowned', crypto, amount);
+		let temp = [...selected];
+		let tempObj = temp.find((c) => c.id === crypto.id);
+		if (tempObj) {
+			tempObj.owned = amount;
+			setSelected(temp);
+		}
 	}
 	return (
 		<>
 			<div className='App'>
 				<h2>Here are the Cryptos</h2>
 				<select
+					key={'select'}
 					onChange={(e) => {
 						// console.log(e.target.value);
 						const c = cryptos?.find((x) => x.id === e.target.value) as Crypto;
@@ -120,10 +132,18 @@ function App() {
 						// console.log(c);
 					}}
 					defaultValue='default'>
-					<optgroup label='Default'>
-						<option value={'default'}>Choose an Option</option>
+					<optgroup
+						key='choose'
+						label='Default'>
+						<option
+							key='choose'
+							value={'default'}>
+							Choose an Option
+						</option>
 					</optgroup>
-					<optgroup label='Coins'>
+					<optgroup
+						key='coins'
+						label='Coins'>
 						{cryptos
 							? cryptos.map((crypto) => {
 									// return <CryptoSummary crypto={crypto} />;
@@ -164,6 +184,41 @@ function App() {
 					/>
 				</div>
 			) : null} */}
+			<h3>Portfolio amounts owned for different coins</h3>
+			{selected
+				? selected.map((s) => {
+						return (
+							<p>
+								{s.name + '------------'}
+								{isNaN(s.current_price * s.owned)
+									? null
+									: (s.current_price * s.owned).toLocaleString('en-IN', {
+											style: 'currency',
+											currency: 'INR',
+											minimumFractionDigits: 2,
+									  })}
+							</p>
+						);
+				  })
+				: null}
+			<h3>Your portfolio value: </h3>
+			{selected
+				? selected
+						.map((s) => {
+							if (isNaN(s.owned)) {
+								return 0;
+							}
+							return s.current_price * s.owned;
+						})
+						.reduce((prev, current) => {
+							return prev + current;
+						}, 0)
+						.toLocaleString('en-IN', {
+							style: 'currency',
+							currency: 'INR',
+							minimumFractionDigits: 2,
+						})
+				: null}
 		</>
 	);
 }
