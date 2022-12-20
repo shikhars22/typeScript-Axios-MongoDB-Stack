@@ -105,7 +105,9 @@ function App() {
 				console.log(e);
 			});
 	}, [selected, range]); */
-
+	function updateOwned(crypto: Crypto, amount: number): void {
+		console.log('updateowned', crypto, amount);
+	}
 	return (
 		<>
 			<div className='App'>
@@ -146,7 +148,12 @@ function App() {
 				</select> */}
 			</div>
 			{selected.map((s) => {
-				return <CryptoSummary crypto={s} />;
+				return (
+					<CryptoSummary
+						crypto={s}
+						updateOwned={updateOwned}
+					/>
+				);
 			})}
 			{/* {selected ? <CryptoSummary crypto={selected} /> : null} */}
 			{/* 		{data ? (

@@ -3,12 +3,16 @@ import { Crypto } from '../Types';
 
 export type AppProps = {
 	crypto: Crypto;
+	updateOwned: (crypto: Crypto, amount: number) => void;
 };
-export default function CryptoSummary({ crypto }: AppProps): JSX.Element {
-	const [amount, setAmount] = useState<string>('0');
+export default function CryptoSummary({
+	crypto,
+	updateOwned,
+}: AppProps): JSX.Element {
+	const [amount, setAmount] = useState<number>(0);
 
 	useEffect(() => {
-		console.log(crypto.name, amount, crypto.current_price * parseFloat(amount));
+		console.log(crypto.name, amount, crypto.current_price * amount);
 	});
 
 	return (
@@ -36,10 +40,11 @@ export default function CryptoSummary({ crypto }: AppProps): JSX.Element {
 				style={{ margin: 10 }}
 				value={amount}
 				onChange={(e) => {
-					setAmount(e.target.value);
+					setAmount(parseFloat(e.target.value));
+					updateOwned(crypto, parseFloat(e.target.value));
 				}}></input>
 			<p>
-				{(crypto.current_price * parseFloat(amount)).toLocaleString('en-US', {
+				{(crypto.current_price * amount).toLocaleString('en-US', {
 					style: 'currency',
 					currency: 'INR',
 					minimumFractionDigits: 2,
